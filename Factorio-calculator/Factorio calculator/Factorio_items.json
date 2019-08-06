@@ -1,0 +1,241 @@
+{
+        "Recipes":{
+                "Iron plate":{
+                        "Ingredients":{"Iron ore":1},
+			"Outputs":{"Iron plate":1},
+                        "Origin":["Furnace"],
+                        "Speed": 3.5
+                },
+                "Copper plate":{
+			"Ingredients":{"Copper ore":1},
+			"Outputs":{"Copper plate":1},
+                        "Origin": ["Furnace"],
+                        "Speed": 3.5
+                },
+                "Steel plate":{
+			"Ingredients":{"Iron plate":5},
+			"Outputs":{"Steel plate":1},
+                        "Origin": ["Furnace"],
+                        "Speed": 17.5
+                },
+                "Copper cable":{
+			"Ingredients":{"Copper plate":1},
+			"Outputs":{"Copper cable":2},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 0.5
+                },
+                "Electronic circuits":{
+			"Ingredients":{"Copper cable":3,"Iron plate":1},
+			"Outputs":{"Electronic circuit":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 0.5
+                },
+                "Advanced circuits":{
+			"Ingredients":{
+				"Copper cable":4,
+				"Plastic bar":2,
+				"Electronic circuits":2},
+			"Outputs":{"Advanced circuit":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 6
+                },
+                "Processing units":{
+			"Ingredients":{
+				"Electronic circuit":20,
+				"Advanced circuits":2,
+				"Sulfuric acid":5},
+			"Outputs":{"Processing unit":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 10,
+			"Involves fluids": true
+                },
+                "Transport belts":{
+			"Ingredients":{
+				"Iron plate":1,
+				"Iron gears":1},
+			"Outputs":{"Transport belt":2},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 0.5
+                },
+                "Iron gear wheel":{
+			"Ingredients":{
+				"Iron plate":2},
+			"Outputs":{"Iron gear wheel":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 0.5
+                },
+                "Science pack 1":{
+			"Ingredients":{
+				"Copper plate":1,
+                                "Iron gear wheel":1},
+			"Outputs":{"Science pack 1":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 5
+                },
+                "Inserter":{
+			"Ingredients":{
+				"Iron plate":1,
+                                "Iron gear wheel":1,
+                                "Electronic circuit":1},
+			"Outputs":{"Inserter":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 0.5
+                },
+                "Inserter":{
+			"Ingredients":{
+				"Iron plate":1,
+                                "Iron gear wheel":1,
+                                "Electronic circuit":1},
+			"Outputs":{"Inserter":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 0.5
+                },
+                "Science pack 2":{
+			"Ingredients":{
+				"Inserter":1,
+                                "Transport belt":1},
+			"Outputs":{"Science pack 2":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 6
+                },
+                "Science pack 3":{
+			"Ingredients":{
+				"Advanced circuit":1,
+                                "Engine unit":1,
+                                "Electric mining drill":1},
+			"Outputs":{"Science pack 3":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 12
+                },
+                "Engine unit":{
+			"Ingredients":{
+				"Steel plate":1,
+                                "Iron gear wheel":1,
+                                "Pipe":2},
+			"Outputs":{"Engine unit":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 10
+                },
+                "Pipe":{
+			"Ingredients":{
+				"Iron plate":1},
+			"Outputs":{"Pipe":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 0.5
+                },
+                "Electric mining drill":{
+			"Ingredients":{
+				"Electronic circuit":3,
+                                "Iron plate":10,
+                                "Iron gear wheel":5},
+			"Outputs":{"Electric mining drill":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 2
+                },
+                "Military science pack":{
+			"Ingredients":{
+				"Piercing rounds magazine":1,
+                                "Grenade":1,
+                                "Gun turret":1},
+			"Outputs":{"Military science pack":2},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 10
+                },
+                "Piercing rounds magazine":{
+			"Ingredients":{
+				"Copper plate":5,
+                                "Steel plate":1,
+                                "Firearm magazine":1},
+			"Outputs":{"Piercing rounds magazine":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 3
+                },
+                "Firearm magazine":{
+			"Ingredients":{
+				"Iron plate":4},
+			"Outputs":{"Firearm magazine":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 1
+                },
+                "Grenade":{
+			"Ingredients":{
+				"Coal":10,
+                                "Iron plate":5},
+			"Outputs":{"Grenade":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 8
+                },
+                "Gun turret":{
+			"Ingredients":{
+				"Iron plate":20,
+                                "Copper plate":10,
+                                "Iron gear wheel":10},
+			"Outputs":{"Gun turret":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 8
+                },
+                "Production science pack":{
+			"Ingredients":{
+				"Electric engine unit":1,
+                                "Electric furnace":1},
+			"Outputs":{"Production science pack":2},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 14
+                },
+                "Electric engine unit":{
+			"Ingredients":{
+				"Electronic circuit":2,
+                                "Engine unit":1,
+                                "Lubricant":15},
+			"Outputs":{"Electric engine unit":1},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 14,
+			"Involves fluids": true
+                },
+                "Electric furnace":{
+			"Ingredients":{
+				"Electric engine unit":1,
+                                "Electric furnace":1},
+			"Outputs":{"Electric furnace":2},
+                        "Origin": ["Assembly machine"],
+                        "Speed": 14
+                }
+        },
+        "Machines":{
+                "Stone furnace":{
+                        "Category": "Furnace",
+						"Level": 1,
+                        "Speed": 1
+                },
+				"Steel furnace":{
+						"Category":"Furnace",
+						"Level": 2,
+						"Speed": 2
+				},
+				"Electric furnace":{
+						"Category":"Furnace",
+						"Level": 3,
+						"Speed": 2
+				},
+				"Assembly machine 1":{
+						"Category":"Assembly machine",
+						"Level": 1,
+						"Speed": 0.5,
+						"Max # ingredients": 2
+				},
+				"Assembly machine 2":{
+						"Category":"Assembly machine",
+						"Level": 2,
+						"Speed": 0.75,
+						"Max # ingredients": 4,
+						"Handles fluids": true
+				},
+				"Assembly machine 3":{
+						"Category":"Assembly machine",
+						"Level": 3,
+						"Speed": 1.25,
+						"Max # ingredients": 6,
+						"Handles fluids": true
+				}
+        }
+}

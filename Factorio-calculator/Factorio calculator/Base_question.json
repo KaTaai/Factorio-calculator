@@ -1,0 +1,42 @@
+{
+	"Produce":[
+		{
+				"Produce": "Steel plate",
+				"Production type": "Rate",
+				"Amount" : 26.66666,
+				"Unit": "Second"
+		},
+		{
+				"Produce": "Science pack 1",
+				"Production type": "Rate",
+				"Amount" : 1,
+				"Unit": "Second"
+		},
+		{
+				"Produce": "Science pack 2",
+				"Production type": "Rate",
+				"Amount" : 1,
+				"Unit": "Second"
+		},
+		{
+				"Produce": "Science pack 3",
+				"Production type": "Rate",
+				"Amount" : 1,
+				"Unit": "Second"
+		},
+		{
+				"Produce": "Military science pack",
+				"Production type": "Rate",
+				"Amount" : 1,
+				"Unit": "Second"
+		},
+		{
+				"Produce": "Production science pack",
+				"Production type": "Rate",
+				"Amount" : 1,
+				"Unit": "Second"
+		}
+	],
+	"Limit": [],
+	"Mainbus":["Iron plate", "Copper plate","Electronic circuit","Advanced circuit","Processing unit"]
+}
