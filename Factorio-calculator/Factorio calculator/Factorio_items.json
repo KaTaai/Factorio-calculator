@@ -191,14 +191,6 @@
                         "Origin": ["Assembly machine"],
                         "Speed": 14,
 			"Involves fluids": true
-                },
-                "Electric furnace":{
-			"Ingredients":{
-				"Electric engine unit":1,
-                                "Electric furnace":1},
-			"Outputs":{"Electric furnace":2},
-                        "Origin": ["Assembly machine"],
-                        "Speed": 14
                 }
         },
         "Machines":{
