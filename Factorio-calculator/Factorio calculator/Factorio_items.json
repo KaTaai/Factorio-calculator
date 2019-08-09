@@ -191,6 +191,15 @@
                         "Origin": ["Assembly machine"],
                         "Speed": 14,
 			"Involves fluids": true
+                },
+                "Electric furnace":{
+					"Ingredients":{
+						"Steel plate":10,
+                        "Advanced circuit":5,
+						"Stone brick":10},
+					"Outputs":{"Electric furnace":1},
+		                        "Origin": ["Assembly machine"],
+		                        "Speed": 5
                 }
         },
         "Machines":{
