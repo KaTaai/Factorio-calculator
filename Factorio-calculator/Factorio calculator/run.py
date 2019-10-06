@@ -171,13 +171,9 @@ def createTree(itemName, recipeList, mainbus):
 #     if itemName in mainbus:
 #         return None
     for r in recipeList:
-        #         print(r.recipeName)
         if not rootRecipe and itemName in r.outputs:
-            print(r.recipeName)
             rootRecipe = Node(name=r.recipeName, recipe=r,
                               mainbusIngredients=[])
-#             recipeList.remove(r)
-#             print(f'{r.recipeName} added as a root')
     # check to see if the tree needs to be expanded and call recursively
     if rootRecipe:
         mainbusIngredients = rootRecipe.mainbusIngredients
@@ -252,8 +248,9 @@ def subdivideTree(tree, productionRate, mainbus):
                 targetedIngredient = [
                     value for value in tree.recipe.ingredients if value in child.recipe.outputs]
                 targetedIngredient = targetedIngredient[0]
-#                 print(targetedIngredient)
-#                 print(tree.recipe.ingredients[targetedIngredient])
+# If there is a multi item thing then the change can happen here
+# for now just the first item is used
+
                 productionRateChild = productionRate * \
                     child.recipe.outputs[targetedIngredient]
 
@@ -315,7 +312,7 @@ def calculateMachines(Tree, Rate, machineDict, limit):
 
     print('\n'.join([f'Product: {outputname}',
                      f'Produce: {Rate}',
-                     f'# machines: {numberMachines} Number machines rounded: {ceil(numberMachines)} Which machine: {chosenMachine.machineName}',
+                     f'# machines: {ceil(numberMachines)} of type: {chosenMachine.machineName}',
                      'Ingredients:', '\n'.join([f'{Rate*v} {k}' for k, v in Tree.recipe.ingredients.items()]), '']))
 
     if Tree.children:
@@ -337,6 +334,7 @@ if __name__ == '__main__':
 
     produceDict = {}
     for Item in produceList:
+        #         print(Item['Produce'])
         firstNode = createTree(Item['Produce'], recipeList, mainbus)
 
         produceDict = consolidateDicts(
