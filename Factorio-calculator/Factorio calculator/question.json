@@ -1,12 +1,12 @@
 {
 	"Produce":[
 		{
-				"Produce": "Electronic circuit",
+				"Produce": "Advanced circuit",
 				"Production type": "Rate",
 				"Amount" : 4,
 				"Unit": "Second"
 		}
 	],
-	"Limit": ["Stone furnace","Assembly machine 1"],
-	"Mainbus":["Iron plate", "Copper plate"]
+	"Limit": ["Steel furnace","Assembly machine 2"],
+	"Mainbus":["Iron plate", "Copper plate","Electronic circuit"]
 }
