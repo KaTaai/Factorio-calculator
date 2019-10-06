@@ -34,7 +34,7 @@
 			"Ingredients":{
 				"Copper cable":4,
 				"Plastic bar":2,
-				"Electronic circuits":2},
+				"Electronic circuit":2},
 			"Outputs":{"Advanced circuit":1},
                         "Origin": ["Assembly machine"],
                         "Speed": 6
